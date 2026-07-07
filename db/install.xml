@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/daily_practice/db" VERSION="20260707" COMMENT="XMLDB file for Moodle block_daily_practice">
+    <TABLES>
+        <TABLE NAME="block_daily_practice_map" COMMENT="Menyimpan mapping nama jabatan ke Course ID">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="jabatan_value" TYPE="char" LENGTH="100" NOTNULL="true" COMMENT="Nilai tekstual jabatan dari user profile field"/>
+                <FIELD NAME="course_id" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" COMMENT="Target Course ID untuk jabatan tersebut"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="jabatan_idx" UNIQUE="true" FIELDS="jabatan_value"/>
+            </INDEXES>
+        </TABLE>
+    </TABLES>
+</XMLDB>
