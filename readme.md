@@ -20,12 +20,19 @@ Setelah menekan tombol *Continue*, Anda akan langsung diarahkan ke halaman penga
 
 ---
 
-##  Pemetaan Jabatan pada Panel Operasional Manager
+##  Membuat Quiz Daily Practice dan Pemetaan Jabatan pada Panel Operasional Manager
+
+**Buat lah qourze dan aktifitas quiz untuk dijadikan halaman daily practice**
+Course & quiz tersebut akan digunakan peserta dalam mengerjakan daily practice 
+
+1. **Buat course Daily Practice dan enroll pesertanya:** Buatlah sebuah course untuk dijadikan daily practice. Kemudian lakukan enroll peserta sesuai dengan target pesertanya. Atau anda bisa menggunakan plugin tambahan menggunakan Enrol by user profile fields : https://marketplace.moodle.com/plugins/667 sehingga setiap orang yang tertulis di jabatan tertentu akan otomatis ternenrol dicourse yang sedang anda buat
+
+2. **Buat aktifitas quiz :** Buatlah aktifitas quiz kemudian tentukan tanggal open dan closenya (Gunakan tanggal yang sama). Untuk memudahkan peserta dalam melihat quiz yang aktif di hari ini, berikan nama quiz sesuai dengan hari / tanggal open / close quiznya. Pengaturan pertanyaan pada quiz dapat anda lakukan seperti biasa 
 
 Akses halaman panel manajemen operasional melalui tautan yang tersedia di halaman pengaturan global di atas, atau akses langsung via URL browser:
 `https://moodle-perusahaan.com/blocks/daily_practice/admin_manage.php`
 
-1. **Daftarkan Jabatan dari HRIS:** Pada kotak teks "Daftarkan Jabatan Baru dari HRIS", ketik nama posisi karyawan **persis** seperti teks yang dikirimkan oleh sistem HRIS ke profil Moodle (Contoh: `STAFF`, `MANAGER`). Klik **Tambah Jabatan**.
+1. **Daftarkan Level Jabatan dari HRIS:** Pada kotak teks "Daftarkan Jabatan Baru dari HRIS", ketik nama posisi karyawan **persis** seperti teks yang dikirimkan oleh sistem HRIS ke profil Moodle (Contoh: `STAFF`, `MANAGER`). Klik **Tambah Jabatan**.
 2. **Petakan ke Course ID:** Ketik angka **Course ID** tempat kuis latihan harian untuk jabatan tersebut berada pada tabel yang tersedia.
 3. Klik **💾 Simpan Perubahan Mapping**.
 4. *Catatan:* Jabatan yang tidak memerlukan kuis harian (seperti Direksi/VP) **tidak perlu didaftarkan** agar Dashboard mereka tetap bersih.
