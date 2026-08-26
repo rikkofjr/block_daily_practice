@@ -23,7 +23,7 @@ Setelah menekan tombol *Continue*, Anda akan langsung diarahkan ke halaman penga
 ##  Membuat Quiz Daily Practice dan Pemetaan Jabatan pada Panel Operasional Manager
 
 **Buat lah qourze dan aktifitas quiz untuk dijadikan halaman daily practice**
-Course & quiz tersebut akan digunakan peserta dalam mengerjakan daily practice 
+Course & quiz tersebut akan menjaid tempat yang digunakan peserta dalam mengerjakan daily practice 
 
 1. **Buat course Daily Practice dan enroll pesertanya:** Buatlah sebuah course untuk dijadikan daily practice. Kemudian lakukan enroll peserta sesuai dengan target pesertanya. Atau anda bisa menggunakan plugin tambahan menggunakan Enrol by user profile fields : https://marketplace.moodle.com/plugins/667 sehingga setiap orang yang tertulis di jabatan tertentu akan otomatis ternenrol dicourse yang sedang anda buat
 
