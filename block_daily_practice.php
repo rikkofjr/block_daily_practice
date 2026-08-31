@@ -4,7 +4,7 @@ defined('MOODLE_INTERNAL') || die();
 class block_daily_practice extends block_base {
 
     public function init() {
-        $this->title = get_string('pluginname', 'block_daily_practice');
+        $this->title = get_string('daily_practice:blockname', 'block_daily_practice');
     }
 
     public function has_config() {
@@ -176,18 +176,18 @@ class block_daily_practice extends block_base {
                     $quiz_url = new moodle_url('/mod/quiz/view.php', array('id' => $quiz_today->cmid));
                     
                     // Render Tombol Utama di Blok Dashboard
-                    $html .= '<p class="small text-danger font-weight-bold mb-1">⚠️ Latihan Hari Ini Belum Selesai!</p>';
+                    $html .= '<p class="small text-danger font-weight-bold mb-1">Luangkan waktu sejenak untuk jadi lebih baik setiap hari!</p>';
                     $html .= '<a href="' . $quiz_url . '" class="btn btn-primary btn-sm w-100 font-weight-bold shadow-sm">🚀 Buka Daily Practice</a>';
                     
                     // --- STRATEGI POPUP DENGAN MOODLE CORE MODAL AMD ---
                     $enable_popup = get_config('block_daily_practice', 'enable_popup');
                     if ($enable_popup && ($PAGE->pagelayout === 'mydashboard' || $PAGE->pagelayout === 'dashboard')) {
                         
-                        $modal_title = "Isi Daily Practice Hari Ini";
+                        $modal_title = "Daily practice menantimu hari ini";
                         $modal_body = '<div class="text-center" style="padding: 15px 10px;">';
                         //$modal_body .= '<p style="font-size: 16px;">Halo! Jabatan Anda terdeteksi sebagai <small>'.strtoupper(s($user_jabatan)).'</small>.</p>';
-                        $modal_body .= '<p class="text-muted">Anda memiliki 1 daily practice yang belum diselesaikan hari ini.</p>';
-                        $modal_body .= '<a href="' . $quiz_url . '" class="btn btn-primary btn-lg w-100 font-weight-bold shadow-sm my-3" style="display:block;">MULAI KERJAKAN SEKARANG</a>';
+                        $modal_body .= '<p class="text-muted">Yuk, luangkan beberapa menit untuk terus berkembang!</p>';
+                        $modal_body .= '<a href="' . $quiz_url . '" class="btn btn-primary btn-lg w-100 font-weight-bold shadow-sm my-3" style="display:block;background-color:#F4197D;">MULAI KERJAKAN SEKARANG</a>';
                         $modal_body .= '</div>';
 
                         $PAGE->requires->js_call_amd('core/modal_factory', 'create', array(
